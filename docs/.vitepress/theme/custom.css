@@ -1,0 +1,212 @@
+:root {
+  --vp-sidebar-width: 260px !important;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.vp-doc .vp-button {
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background-color 0.25s,
+    opacity 0.25s; /* 平滑过渡背景色 */
+  padding: 0 20px;
+  line-height: 38px;
+  font-size: 14px;
+  border-radius: 20px;
+  text-decoration: none !important; /* 初始无下划线 */
+}
+
+/* Brand 按钮：蓝色背景，白色字 */
+.vp-doc .vp-button.brand {
+  border-color: var(--vp-button-brand-border);
+  color: var(--vp-button-brand-text) !important;
+  background-color: var(--vp-button-brand-bg);
+}
+
+.vp-doc .vp-button.brand:hover {
+  /* 使用 VitePress 变量：背景变深 */
+  background-color: var(--vp-button-brand-hover-bg);
+  color: var(--vp-button-brand-text) !important; /* 强制文字颜色保持不变 */
+}
+
+/* Alt 按钮：灰色背景，深色字 */
+.vp-doc .vp-button.alt {
+  border-color: var(--vp-button-alt-border);
+  color: var(--vp-button-alt-text) !important;
+  background-color: var(--vp-button-alt-bg);
+}
+
+.vp-doc .vp-button.alt:hover {
+  /* 背景变深 */
+  background-color: var(--vp-button-alt-hover-bg);
+  color: var(--vp-button-alt-text) !important; /* 强制文字颜色保持不变 */
+}
+
+/* ============================================================
+   关于页面 (About Page) 专用样式
+   ============================================================ */
+
+/* 1. 页面容器与整体布局 */
+.custom-about-page {
+  max-width: 780px; /* 限制阅读宽度，确保视觉重心 */
+  margin: 0 auto;
+  padding: 20px 24px 60px;
+}
+
+/* 2. 顶部 Header 区域 */
+.about-header {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.about-header .main-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  /* 渐变色：使用了 VitePress 品牌变量和一个互补色 */
+  background: linear-gradient(120deg, var(--vp-c-brand-1), #9c27b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
+  padding: 0.1em 0;
+  display: block;
+  border: none;
+  margin: 0;
+}
+
+.about-header .tagline {
+  font-size: 1.25rem;
+  color: var(--vp-c-text-2);
+  margin: 16px 0 32px;
+}
+
+/* 3. 按钮布局 */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* 4. 通用部分标题与文字 */
+.section-title {
+  text-align: left;
+  border: none !important;
+  font-size: 1.8rem;
+  margin: 24px 0 10px !important;
+}
+
+.group-title {
+  text-align: left;
+  border: none !important;
+  font-size: 1.4rem;
+  margin: 40px 0 20px !important;
+}
+
+.center-text {
+  text-align: center;
+  color: var(--vp-c-text-2);
+}
+
+/* 5. 活跃开发者卡片网格 */
+.team-grid {
+  display: grid;
+  /* 响应式网格：最小 220px，自动填充 */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--vp-c-brand-1);
+}
+
+.team-card .avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-card .info {
+  display: flex;
+  flex-direction: column; /* 关键：强制子元素垂直排列 */
+  justify-content: center; /* 垂直居中对齐 */
+  gap: 4px; /* 名称和角色之间的间距 */
+}
+
+/* 确保名称占据一行且没有额外的边距 */
+.team-card .name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--vp-c-text-1);
+  word-break: break-word;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+/* 确保角色在下一行 */
+.team-card .role {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.2;
+  white-space: normal;
+}
+
+/* 6. 贡献者标签列表 */
+.contributor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.contributor-tag {
+  padding: 6px 14px;
+  background-color: var(--vp-c-bg-alt);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--vp-c-text-1);
+  transition: all 0.2s;
+}
+
+.contributor-tag:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+/* 7. 辅助元素 */
+.divider {
+  margin: 60px 0;
+  opacity: 0.1;
+  border: 0;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.about-footer {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-3);
+  line-height: 1.6;
+  font-style: italic;
+}
