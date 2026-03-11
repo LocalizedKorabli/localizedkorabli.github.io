@@ -5,8 +5,8 @@ layout: home
 <div class="vp-doc custom-about-page">
 
   <header class="about-header">
-    <h1 class="main-title">「澪刻」について</h1>
-    <p class="tagline">プロジェクトの歩みと背後のチームを紹介します</p>
+    <h1 class="main-title">澪刻について</h1>
+    <p class="tagline">プロジェクトの歴史とチームメンバーをご紹介します</p>
     <div class="action-buttons">
       <a class="vp-button brand" href="https://github.com/LocalizedKorabli" target="_blank">チームページへ</a>
       <a class="vp-button alt" href="https://discord.gg/3d9k2mkWy4" target="_blank">Discord</a>
@@ -17,7 +17,9 @@ layout: home
     <h2 class="section-title">プロジェクトについて</h2>
     <div class="about-text">
       <p>
-        <strong>澪刻（LocalizedKorabli）</strong>は、<em>Mir Korabley</em> の多言語ローカライズ Mod 制作に特化したプロジェクトです。
+        <strong>澪刻 (LocalizedKorabli)</strong> は、ゲーム『Mir Korabley』向けの多言語ローカライズModを専門に開発するプロジェクトです。
+      </p>
+      <p>
         世界中のプレイヤーに、最もシンプルで安定し、かつ効率的なローカライズ・ソリューションを提供することを目指しています。
       </p>
     </div>
@@ -27,8 +29,8 @@ layout: home
 
 <section class="content-section">
 <h2 class="section-title">チームについて</h2>
-    <p><strong>澪刻</strong>は 2023 年 9 月に設立され、同年 10 月より <em>Mir Korabley</em> の簡体字中国語ローカライズの制作を開始しました。</p>
-    <p>当チームは、海軍戦ゲームを愛する開発者と有志のボランティアで構成されています。</p>
+    <p><strong>澪刻</strong>は 2023 年 9 月に設立され、同年 10 月より『Mir Korabley』の簡体字中国語ローカライズの開発を開始しました。</p>
+    <p>当チームは、海軍戦闘ゲームを愛好する開発者とボランティアの有志によって構成されています。</p>
 
 <h3 class="group-title">アクティブメンバー<sub>(A-Z)</sub></h3>
     <div class="team-grid">
@@ -56,7 +58,7 @@ layout: home
       <div class="team-card">
         <img src="https://avatars.githubusercontent.com/u/29142145" class="avatar" alt="WindowsNoEditor" />
         <div class="info">
-          <span class="name">WindowsNoEditor</span>
+          <span class="name">Windows NoEditor</span>
           <span class="role">開発者</span>
         </div>
       </div>
@@ -74,7 +76,7 @@ layout: home
 </section>
 
 <footer class="about-footer">
-    本プロジェクトへの貢献を希望される方は、GitHub での Pull Request またはお問い合わせをお待ちしております。
+    本プロジェクトへのご協力・ご貢献を希望される方は、GitHub での Pull Request またはお問い合わせより、お気軽にご連絡ください。
 </footer>
 
 </div>
