@@ -5,7 +5,7 @@ layout: home
 <div class="vp-doc custom-about-page">
 
   <header class="about-header">
-    <h1 class="main-title">澪刻について</h1>
+    <h1 class="main-title"><ruby>澪<rt>リン</rt></ruby><ruby>刻<rt>カー</rt></ruby>について</h1>
     <p class="tagline">プロジェクトの歴史とチームメンバーをご紹介します</p>
     <div class="action-buttons">
       <a class="vp-button brand" href="https://github.com/LocalizedKorabli" target="_blank">チームページへ</a>
