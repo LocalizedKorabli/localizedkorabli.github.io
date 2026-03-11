@@ -26,7 +26,8 @@ export default defineConfig({
               { text: '离线安装包', link: '/chs/offline-installer' }
             ]
           }
-        ]
+        ],
+        logoLink: '/chs/'
       }
     },
     en: {
@@ -38,8 +39,8 @@ export default defineConfig({
           { text: 'Home', link: '/en/' },
           { text: 'Download', link: '/en/lk-next' },
           { text: 'About', link: '/en/about' }
-        ]/* ,
-        sidebar: [
+        ],
+        /* sidebar: [
           {
             text: 'Download I18n',
             items: [
@@ -47,7 +48,8 @@ export default defineConfig({
               { text: 'Offline Installer', link: '/en/offline-installer' }
             ]
           }
-        ] */
+        ], */
+        logoLink: '/en/'
       }
     },
     cht: {
@@ -60,8 +62,8 @@ export default defineConfig({
           { text: '首頁', link: '/cht/' },
           { text: '下載', link: '/cht/lk-next' },
           { text: '關於', link: '/cht/about' }
-        ]/* ,
-        sidebar: [
+        ],
+        /* sidebar: [
           {
             text: '下載在地化',
             items: [
@@ -70,6 +72,7 @@ export default defineConfig({
             ]
           }
         ] */
+        logoLink: '/cht/'
       }
     },
     ja: {
@@ -82,8 +85,8 @@ export default defineConfig({
           { text: 'ホーム', link: '/ja/' },
           { text: 'ダウンロード', link: '/ja/lk-next' },
           { text: 'について', link: '/ja/about' }
-        ]/* ,
-        sidebar: [
+        ],
+        /* sidebar: [
           {
             text: 'ダウンロード',
             items: [
@@ -91,7 +94,8 @@ export default defineConfig({
               { text: 'オフライン専用インストーラー', link: '/ja/offline-installer' }
             ]
           }
-        ] */
+        ], */
+        logoLink: '/ja/'
       }
     }
   },
