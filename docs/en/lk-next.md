@@ -24,7 +24,7 @@ layout: page
     LKInstaller Next
   </h1>
   <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 600px; margin: 0 auto;">
-    An online auto-installer designed for Mir Korabley localization
+    An online auto-installer designed for installing Mir Korabley localization packs
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
     <a class="vp-button brand" href="https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe" target="_blank">Download</a>

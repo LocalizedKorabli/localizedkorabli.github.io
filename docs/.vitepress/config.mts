@@ -40,7 +40,7 @@ export default defineConfig({
           { text: 'Download', link: '/en/lk-next' },
           { text: 'About', link: '/en/about' }
         ],
-        /* sidebar: [
+        sidebar: [
           {
             text: 'Download I18n',
             items: [
@@ -48,7 +48,7 @@ export default defineConfig({
               { text: 'Offline Installer', link: '/en/offline-installer' }
             ]
           }
-        ], */
+        ],
         logoLink: '/en/'
       }
     },
@@ -86,15 +86,15 @@ export default defineConfig({
           { text: 'ダウンロード', link: '/ja/lk-next' },
           { text: 'について', link: '/ja/about' }
         ],
-        /* sidebar: [
+        sidebar: [
           {
             text: 'ダウンロード',
             items: [
               { text: 'オンライン版インストーラー', link: '/ja/lk-next' },
-              { text: 'オフライン専用インストーラー', link: '/ja/offline-installer' }
+              { text: 'オフライン専用 L10n パック', link: '/ja/offline-installer' }
             ]
           }
-        ], */
+        ],
         logoLink: '/ja/'
       }
     }

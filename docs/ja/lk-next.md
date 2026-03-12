@@ -21,7 +21,7 @@ layout: page
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   ">
-    LKInstaller Next
+    澪刻・インストーラー Next
   </h1>
   <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 600px; margin: 0 auto;">
     Mir Korabley ローカライズ専用のオンライン自動インストーラー
