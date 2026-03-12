@@ -17,7 +17,7 @@ layout: home
     <h2 class="section-title">プロジェクトについて</h2>
     <div class="about-text">
       <p>
-        <strong>澪刻 (LocalizedKorabli)</strong> は、ゲーム『Mir Korabley』向けの多言語ローカライズModを専門に開発するプロジェクトです。
+        <strong>澪刻 (LocalizedKorabli)</strong> は、ゲーム『Mir Korabley』向けの多言語ローカライズ Mod を専門に開発するプロジェクトです。
       </p>
       <p>
         世界中のプレイヤーに、最もシンプルで安定し、かつ効率的なローカライズ・ソリューションを提供することを目指しています。
