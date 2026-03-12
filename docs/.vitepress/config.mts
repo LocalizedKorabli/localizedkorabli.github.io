@@ -100,7 +100,6 @@ export default defineConfig({
     }
   },
   head: [
-    // 如果你使用的是 .svg 格式（推荐，因为你之前提到过 /svg/lki.svg）
     ['link', { rel: 'icon', href: '/svg/lki.svg' }]
   ],
   themeConfig: {
@@ -116,6 +115,10 @@ export default defineConfig({
       {
         icon: 'patreon',
         link: 'https://www.patreon.com/c/LocalizedKorabli' 
+      },
+      {
+        icon: 'x',
+        link: 'https://x.com/RinkaaOfficial'
       }
     ],
     logo: '/svg/lki.svg',
