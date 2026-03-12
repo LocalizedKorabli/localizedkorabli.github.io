@@ -24,7 +24,7 @@ layout: page
     澪刻·本地化安装器 Next
   </h1>
   <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 600px; margin: 0 auto;">
-    一款专为安装 Mir Korabley 本地化打造的在线自动安装器
+    专门为安装 Mir Korabley 本地化模组打造的在线自动安装器
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
     <a class="vp-button brand" href="https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe" target="_blank">下载</a>

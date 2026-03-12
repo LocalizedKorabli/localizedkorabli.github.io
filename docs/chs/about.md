@@ -6,7 +6,7 @@ layout: home
 
   <header class="about-header">
     <h1 class="main-title">关于澪刻</h1>
-    <p class="tagline">了解项目的前世今生与背后的团队</p>
+    <p class="tagline">了解此项目的前世今生与背后的团队</p>
     <div class="action-buttons">
       <a class="vp-button brand" href="https://github.com/LocalizedKorabli" target="_blank">前往团队页</a>
       <a class="vp-button alt" href="https://qm.qq.com/q/I5MI2LXcIi" target="_blank">加入交流群</a>

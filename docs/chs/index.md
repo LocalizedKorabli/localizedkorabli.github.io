@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "澪刻"
   text: "LocalizedKorabli"
-  tagline: 社区驱动的 Mir Korabley 民间本地化团队
+  tagline: 社区驱动的 Mir Korabley 民间本地化
   actions:
     - theme: brand
       text: 下载本地化

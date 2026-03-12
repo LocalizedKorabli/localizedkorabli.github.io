@@ -9,7 +9,7 @@ layout: home
     <p class="tagline">プロジェクトの歴史とチームメンバーをご紹介します</p>
     <div class="action-buttons">
       <a class="vp-button brand" href="https://github.com/LocalizedKorabli" target="_blank">チームページへ</a>
-      <a class="vp-button alt" href="https://discord.gg/3d9k2mkWy4" target="_blank">Discord</a>
+      <a class="vp-button alt" href="https://discord.gg/3d9k2mkWy4" target="_blank">Discord へ</a>
     </div>
   </header>
 

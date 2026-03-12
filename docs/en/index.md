@@ -6,7 +6,7 @@ hero:
   name: "Localized"
   text: "Korabli"
   tagline: |
-    A community-driven localization team
+    A community-driven localization project
     for Mir Korabley
   actions:
     - theme: brand

@@ -90,8 +90,8 @@ export default defineConfig({
           {
             text: 'ダウンロード',
             items: [
-              { text: 'オンライン版インストーラー', link: '/ja/lk-next' },
-              { text: 'オフライン専用 L10n パック', link: '/ja/offline-installer' }
+              { text: 'オンライン自動インストーラー', link: '/ja/lk-next' },
+              { text: 'オフライン L10n パッケージ', link: '/ja/offline-installer' }
             ]
           }
         ],

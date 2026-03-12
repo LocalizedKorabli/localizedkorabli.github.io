@@ -24,7 +24,7 @@ layout: page
     澪刻·在地化安裝器 Next
   </h1>
   <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 600px; margin: 0 auto;">
-    一款專門為安裝 Mir Korabley 在地化模組打造的線上自動安裝器
+    專門為安裝 Mir Korabley 在地化模組打造的線上自動安裝器
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
     <a class="vp-button brand" href="https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe" target="_blank">下載</a>
@@ -40,7 +40,7 @@ layout: page
   <p class="custom-block-title">核心特性</p>
   <ul>
     <li><strong>自動化</strong>: 支援一鍵導入所有遊戲實例，提供一鍵安裝、解除安裝及生成「自動更新捷徑」功能</li>
-    <li><strong>Steam 兼容</strong>: 完美支援 Steam 版 Mir Korabley</li>
+    <li><strong>Steam 相容</strong>: 完美支援 Steam 版 Mir Korabley</li>
   </ul>
 </div>
 
