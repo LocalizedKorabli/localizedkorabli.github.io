@@ -28,7 +28,7 @@ layout: page
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
     <a class="vp-button brand" href="https://tapio.lanzouu.com/b0nz5p18d" target="_blank">正式服离线包</a>
-    <a class="vp-button alt" href="https://tapio.lanzouu.com/b0nz6hgad" target="_blank">PT服离线包</a>
+    <a class="vp-button alt" href="https://tapio.lanzouu.com/b0nz6hgad" target="_blank">PT 服离线包</a>
   </div>
 </header>
 

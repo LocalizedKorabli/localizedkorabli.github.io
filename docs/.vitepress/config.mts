@@ -63,7 +63,7 @@ export default defineConfig({
           { text: '下載', link: '/cht/lk-next' },
           { text: '關於', link: '/cht/about' }
         ],
-        /* sidebar: [
+        sidebar: [
           {
             text: '下載在地化',
             items: [
@@ -71,7 +71,7 @@ export default defineConfig({
               { text: '離綫安裝程式', link: '/cht/offline-installer' }
             ]
           }
-        ] */
+        ],
         logoLink: '/cht/'
       }
     },
