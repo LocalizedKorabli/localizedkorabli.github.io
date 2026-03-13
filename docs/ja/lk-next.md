@@ -49,7 +49,7 @@ layout: page
   <p class="custom-block-title">充実したサポート</p>
   <ul>
     <li><strong>マルチ OS 対応</strong>: Windows 7 / 8 / 10 / 11 (64bit) 対応</li>
-    <li><strong>多言語対応</strong>: インターフェースは簡体字中国語、繁体字中国語、英語、日本語をサポート。各言語に対応したローカライズパッケージをインストール可能です</li>
+    <li><strong>多言語対応</strong>: インターフェースは日本語、簡体字中国語、繁体字中国語、英語をサポート。各言語に対応したローカライズパッケージをインストール可能です</li>
     <li><strong>マルチルート</strong>: Tencent Cloud、Cloudflare、Gitee、GitLab など複数の配信ルートに対応し、世界中のプレイヤーに安定したダウンロード体験を提供します</li>
   </ul>
 </div>
