@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "LocalizedKorabli",
-  description: "Homepage for LocalizedKorabli, a community-based localization team to translate the video game 'Mir Korabley' into multiple languages.",
+  description: "Homepage for LocalizedKorabli, a community-based localization team to translate the video game 'Мир кораблей' into multiple languages.",
   // 多语言配置
   locales: {
     chs: {
@@ -27,6 +27,10 @@ export default defineConfig({
             ]
           }
         ],
+        footer: {
+          message: '本团队及项目与 Леста Игры 无官方关联。所有游戏资源版权归原权利人所有。',
+          copyright: `© 2023–${new Date().getFullYear()} LocalizedKorabli 保留所有权利`
+        },
         logoLink: '/chs/'
       }
     },
@@ -49,6 +53,10 @@ export default defineConfig({
             ]
           }
         ],
+        footer: {
+          message: 'The team and the project are not affiliated with Леста Игры. All game assets are the property of their respective owners.',
+          copyright: `© 2023–${new Date().getFullYear()} LocalizedKorabli. All Rights Reserved.`
+        },
         logoLink: '/en/'
       }
     },
@@ -72,6 +80,10 @@ export default defineConfig({
             ]
           }
         ],
+        footer: {
+          message: '本團隊及專案與 Леста Игры 無官方關聯。所有遊戲資源版權歸原權利人所有。',
+          copyright: `© 2023–${new Date().getFullYear()} LocalizedKorabli 版權所有`
+        },
         logoLink: '/cht/'
       }
     },
@@ -95,6 +107,10 @@ export default defineConfig({
             ]
           }
         ],
+        footer: {
+          message: '当プロジェクトは Леста Игры とは一切関係ありません。ゲーム資産の著作権は各権利所有者に帰属します。',
+          copyright: `© 2023–${new Date().getFullYear()} LocalizedKorabli. All Rights Reserved.`
+        },
         logoLink: '/ja/'
       }
     }
@@ -122,6 +138,9 @@ export default defineConfig({
       }
     ],
     logo: '/svg/lki.svg',
+    footer: {
+      copyright: `Copyright © 2023–${new Date().getFullYear()} LocalizedKorabli`
+    },
     logoLink: '/',
     /* siteTitle: false */
   }

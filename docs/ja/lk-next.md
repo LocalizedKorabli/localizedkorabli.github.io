@@ -24,7 +24,7 @@ layout: page
     澪刻・インストーラー Next
   </h1>
   <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 600px; margin: 0 auto;">
-    Mir Korabley ローカライズ専用のオンライン自動インストーラー
+    Мир кораблей ローカライズ専用のオンライン自動インストーラー
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
     <a class="vp-button brand" href="https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe" target="_blank">ダウンロード</a>
@@ -40,7 +40,7 @@ layout: page
   <p class="custom-block-title">主な特徴</p>
   <ul>
     <li><strong>自動化</strong>: すべてのゲームインスタンスの一括インポートに対応。ワンクリックでのインストール、アンインストール、および「自動更新ショートカット」機能を提供します</li>
-    <li><strong>Steam 版対応</strong>: Steam 版 Mir Korabley を完全にサポートしています</li>
+    <li><strong>Steam 版対応</strong>: Steam 版 Мир кораблей を完全にサポートしています</li>
   </ul>
 </div>
 

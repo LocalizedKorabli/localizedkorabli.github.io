@@ -23,8 +23,8 @@ layout: page
   ">
     澪刻·本地化安装器 Next
   </h1>
-  <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 600px; margin: 0 auto;">
-    专门为安装 Mir Korabley 本地化模组打造的在线自动安装器
+  <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 650px; margin: 0 auto;">
+    专门为安装 Мир кораблей 本地化模组打造的在线自动安装器
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
     <a class="vp-button brand" href="https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe" target="_blank">下载</a>
@@ -40,7 +40,7 @@ layout: page
   <p class="custom-block-title">核心特性</p>
   <ul>
     <li><strong>自动化</strong>: 支持一键导入所有游戏实例，提供一键安装、卸载及“自动更新快捷方式”功能</li>
-    <li><strong>Steam 兼容</strong>: 完美支持 Steam 版 Mir Korabley</li>
+    <li><strong>Steam 兼容</strong>: 完美支持 Steam 版 Мир кораблей</li>
   </ul>
 </div>
 

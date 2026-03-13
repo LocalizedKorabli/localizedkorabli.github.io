@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "<ruby>澪<rt>リン</rt></ruby><ruby>刻<rt>カー</rt></ruby>"
   text: "LocalizedKorabli"
-  tagline: "<p>コミュニティ主導の『Mir Korabley』</p><p>有志ローカライズチーム</p>"
+  tagline: "<p>コミュニティ主導の『Мир кораблей』</p><p>有志ローカライズチーム</p>"
   actions:
     - theme: brand
       text: ダウンロード

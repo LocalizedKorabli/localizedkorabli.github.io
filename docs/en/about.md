@@ -17,7 +17,7 @@ layout: home
     <h2 class="section-title">About the Project</h2>
     <div class="about-text">
       <p>
-        <strong>LocalizedKorabli</strong> focuses on creating multi-language localization mods for <em>Mir Korabley</em>.
+        <strong>LocalizedKorabli</strong> focuses on creating multi-language localization mods for <em>Мир кораблей</em>.
         We aim to provide the simplest, most stable, and efficient localization solutions for players worldwide.
       </p>
     </div>
@@ -27,7 +27,7 @@ layout: home
 
 <section class="content-section">
 <h2 class="section-title">About the Team</h2>
-    <p><strong>LocalizedKorabli</strong> was founded in September 2023 and began producing Simplified Chinese localization for <em>Mir Korabley</em> in October of the same year.</p>
+    <p><strong>LocalizedKorabli</strong> was founded in September 2023 and began producing Simplified Chinese localization for <em>Мир кораблей</em> in October of the same year.</p>
     <p>Our team consists of developers and volunteers who are passionate about naval combat games.</p>
 
 <h3 class="group-title">Active Members<sub>(A-Z)</sub></h3>
@@ -76,5 +76,31 @@ layout: home
 <footer class="about-footer">
     If you would like to contribute to this project, feel free to submit a Pull Request via GitHub or contact us.
 </footer>
+
+<hr class="divider" />
+
+  <section class="content-section">
+    <h2 class="section-title">Related Links</h2>
+    <div class="links-grid">
+      <a href="https://korabli.su/" target="_blank" class="link-card">
+        <div class="link-content">
+          <span class="link-name">Мир кораблей</span>
+          <span class="link-desc">Мир кораблей's official website</span>
+        </div>
+      </a>
+      <a href="https://tanki.onlyax.com/" target="_blank" class="link-card">
+        <div class="link-content">
+          <span class="link-name">艾伦汉化</span>
+          <span class="link-desc">A team providing Chinese localization for Мир танков</span>
+        </div>
+      </a>
+      <a href="https://tanki.onlyax.com/" target="_blank" class="link-card">
+        <div class="link-content">
+          <span class="link-name">LocalizedTanki</span>
+          <span class="link-desc">A team providing multi-language (EN, PL, DE, KO, etc.) localizations for Мир танков</span>
+        </div>
+      </a>
+    </div>
+  </section>
 
 </div>

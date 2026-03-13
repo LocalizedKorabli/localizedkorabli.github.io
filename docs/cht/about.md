@@ -17,7 +17,7 @@ layout: home
     <h2 class="section-title">關於專案</h2>
     <div class="about-text">
       <p>
-        <strong>澪刻在地化</strong> 專注於為 <em>Mir Korabley</em> 製作多語言在地化模組。
+        <strong>澪刻在地化</strong> 專注於為 <em>Мир кораблей</em> 製作多語言在地化模組。
         旨在為全球玩家提供最簡單、穩定且高效的在地化解決方案。
       </p>
     </div>
@@ -27,7 +27,7 @@ layout: home
 
 <section class="content-section">
 <h2 class="section-title">關於團隊</h2>
-    <p><strong>澪刻</strong> 成立於 2023 年 9 月，並於同年 10 月開始為 <em>Mir Korabley</em> 製作簡體中文在地化。</p>
+    <p><strong>澪刻</strong> 成立於 2023 年 9 月，並於同年 10 月開始為 <em>Мир кораблей</em> 製作簡體中文在地化。</p>
     <p>本團隊由一群熱愛海戰游戲的開發者與志願者组成——</p>
 
 <h3 class="group-title">活躍成員<sub>(A-Z)</sub></h3>
@@ -76,5 +76,32 @@ layout: home
 <footer class="about-footer">
     如果您也想為本專案添磚加瓦，歡迎透過 GitHub 提交 Pull Request 或聯絡我們。
 </footer>
+
+<hr class="divider" />
+
+  <section class="content-section">
+    <h2 class="section-title">相關連結</h2>
+    <div class="links-grid">
+      <a href="https://korabli.su/" target="_blank" class="link-card">
+        <div class="link-content">
+          <span class="link-name">Мир кораблей</span>
+          <span class="link-desc">Мир кораблей 的官方網站</span>
+        </div>
+      </a>
+      <a href="https://tanki.onlyax.com/" target="_blank" class="link-card">
+        <div class="link-content">
+          <span class="link-name">艾倫漢化</span>
+          <span class="link-desc">為 Мир танков 提供簡體中文在地化的團隊</span>
+        </div>
+      </a>
+      <a href="https://tanki.onlyax.com/" target="_blank" class="link-card">
+        <div class="link-content">
+          <span class="link-name">LocalizedTanki</span>
+          <span class="link-desc">為 Мир танков 提供英、波、德、韓等多語言在地化的團隊</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
 
 </div>

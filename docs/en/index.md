@@ -7,7 +7,7 @@ hero:
   text: "Korabli"
   tagline: |
     A community-driven localization project
-    for Mir Korabley
+    for Мир кораблей
   actions:
     - theme: brand
       text: Download

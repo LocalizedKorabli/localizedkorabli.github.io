@@ -17,7 +17,7 @@ layout: home
     <h2 class="section-title">プロジェクトについて</h2>
     <div class="about-text">
       <p>
-        <strong>澪刻 (LocalizedKorabli)</strong> は、ゲーム『Mir Korabley』向けの多言語ローカライズ Mod を専門に開発するプロジェクトです。
+        <strong>澪刻 (LocalizedKorabli)</strong> は、ゲーム『Мир кораблей』向けの多言語ローカライズ Mod を専門に開発するプロジェクトです。
       </p>
       <p>
         世界中のプレイヤーに、最もシンプルで安定し、かつ効率的なローカライズ・ソリューションを提供することを目指しています。
@@ -29,7 +29,7 @@ layout: home
 
 <section class="content-section">
 <h2 class="section-title">チームについて</h2>
-    <p><strong>澪刻</strong>は 2023 年 9 月に設立され、同年 10 月より『Mir Korabley』の簡体字中国語ローカライズの開発を開始しました。</p>
+    <p><strong>澪刻</strong>は 2023 年 9 月に設立され、同年 10 月より『Мир кораблей』の簡体字中国語ローカライズの開発を開始しました。</p>
     <p>当チームは、海軍戦闘ゲームを愛好する開発者とボランティアの有志によって構成されています。</p>
 
 <h3 class="group-title">アクティブメンバー<sub>(A-Z)</sub></h3>
@@ -78,5 +78,31 @@ layout: home
 <footer class="about-footer">
     本プロジェクトへのご協力・ご貢献を希望される方は、GitHub での Pull Request またはお問い合わせより、お気軽にご連絡ください。
 </footer>
+
+<hr class="divider" />
+
+<section class="content-section">
+  <h2 class="section-title">関連リンク</h2>
+  <div class="links-grid">
+    <a href="https://korabli.su/" target="_blank" class="link-card">
+      <div class="link-content">
+        <span class="link-name">Мир кораблей</span>
+        <span class="link-desc">Мир кораблей 公式サイト</span>
+      </div>
+    </a>
+    <a href="https://tanki.onlyax.com/" target="_blank" class="link-card">
+      <div class="link-content">
+        <span class="link-name">アレン漢化</span>
+        <span class="link-desc">Мир танков の中国語ローカライズを提供</span>
+      </div>
+    </a>
+    <a href="https://tanki.onlyax.com/" target="_blank" class="link-card">
+      <div class="link-content">
+        <span class="link-name">LocalizedTanki</span>
+        <span class="link-desc">Мир танков の多言語（英語、ポーランド語、ドイツ語、韓国語等）ローカライズを提供</span>
+      </div>
+    </a>
+  </div>
+</section>
 
 </div>

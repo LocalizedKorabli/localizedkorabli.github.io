@@ -210,3 +210,47 @@ html {
   line-height: 1.6;
   font-style: italic;
 }
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.link-card {
+  display: block;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+}
+
+.link-card:hover {
+  border-color: var(--vp-c-brand);
+  background-color: var(--vp-c-bg-mute);
+  transform: translateY(-2px);
+}
+
+.link-name {
+  display: block;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  font-size: 1.1rem;
+}
+
+.link-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  margin-top: 4px;
+}
+
+/* 移动端适配 */
+@media (max-width: 640px) {
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+}

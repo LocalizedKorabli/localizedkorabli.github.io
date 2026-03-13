@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "澪刻"
   text: "LocalizedKorabli"
-  tagline: 社群驅動的 Mir Korabley 民間在地化
+  tagline: 社群驅動的 Мир кораблей 民間在地化
   actions:
     - theme: brand
       text: 下載在地化
