@@ -40,6 +40,7 @@ layout: page
   <p class="custom-block-title">Core Features</p>
   <ul>
     <li><strong>Automation</strong>: Supports one-click import of all game instances, providing easy installation, uninstallation, and "Auto-update Shortcut" features</li>
+    <li><strong>Customization</strong>: Overall gaming experience enhancement based on the EE pack, font optimization pack, and l10n modifications.</li>
     <li><strong>Steam Compatible</strong>: Full support for Мир кораблей on Steam</li>
   </ul>
 </div>
@@ -47,7 +48,8 @@ layout: page
 <div class="custom-block info">
   <p class="custom-block-title">Full Support</p>
   <ul>
-    <li><strong>Multi-routes</strong>: Supports Tencent Cloud, Cloudflare, Gitee, GitLab and other routes to ensure download experience for global players</li>
+    <li><strong>Multi-OS</strong>: Supports Windows 7 / 8 / 10 / 11 (64-bit)</li>
+    <li><strong>Multi-route</strong>: Supports Tencent Cloud, Cloudflare, Gitee, GitLab and other routes to ensure download experience for global players</li>
     <li><strong>Multi-language</strong>: Supports interface display in Simplified Chinese, Traditional Chinese, English, and Japanese, with localization packs for each</li>
   </ul>
 </div>

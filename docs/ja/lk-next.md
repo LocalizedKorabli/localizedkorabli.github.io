@@ -40,6 +40,7 @@ layout: page
   <p class="custom-block-title">主な特徴</p>
   <ul>
     <li><strong>自動化</strong>: すべてのゲームインスタンスの一括インポートに対応。ワンクリックでのインストール、アンインストール、および「自動更新ショートカット」機能を提供します</li>
+    <li><strong>カスタマイズ</strong>: EE (Experience Enhancement) パック、フォント最適化、および l10n Mod に基づき、ゲーム体験を総合的に向上させます。</li>
     <li><strong>Steam 版対応</strong>: Steam 版 Мир кораблей を完全にサポートしています</li>
   </ul>
 </div>
@@ -47,8 +48,9 @@ layout: page
 <div class="custom-block info">
   <p class="custom-block-title">充実したサポート</p>
   <ul>
-    <li><strong>マルチルート</strong>: Tencent Cloud、Cloudflare、Gitee、GitLab など複数の配信ルートに対応し、世界中のプレイヤーに安定したダウンロード体験を提供します</li>
+    <li><strong>マルチ OS 対応</strong>: Windows 7 / 8 / 10 / 11 (64bit) 対応</li>
     <li><strong>多言語対応</strong>: インターフェースは簡体字中国語、繁体字中国語、英語、日本語をサポート。各言語に対応したローカライズパッケージをインストール可能です</li>
+    <li><strong>マルチルート</strong>: Tencent Cloud、Cloudflare、Gitee、GitLab など複数の配信ルートに対応し、世界中のプレイヤーに安定したダウンロード体験を提供します</li>
   </ul>
 </div>
 </div>

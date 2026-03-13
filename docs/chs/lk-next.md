@@ -40,6 +40,7 @@ layout: page
   <p class="custom-block-title">核心特性</p>
   <ul>
     <li><strong>自动化</strong>: 支持一键导入所有游戏实例，提供一键安装、卸载及“自动更新快捷方式”功能</li>
+    <li><strong>定制化</strong>: 通过体验增强包、字体优化包、本地化修改包全方位提升游戏体验</li>
     <li><strong>Steam 兼容</strong>: 完美支持 Steam 版 Мир кораблей</li>
   </ul>
 </div>
@@ -47,6 +48,7 @@ layout: page
 <div class="custom-block info">
   <p class="custom-block-title">全面支持</p>
   <ul>
+    <li><strong>多系统</strong>: 支持 Windows 7 / 8 / 10 / 11 (64 位)</li>
     <li><strong>多线路</strong>: 支持腾讯云、Cloudflare、Gitee、GitLab 等多条线路，保证全球玩家下载体验</li>
     <li><strong>多语言</strong>: 支持以简体中文、繁体中文、英语、日语显示，并为以上语言分别安装本地化包</li>
   </ul>
