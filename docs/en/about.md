@@ -94,7 +94,7 @@ layout: home
           <span class="link-desc">A team providing Chinese localization for Мир танков</span>
         </div>
       </a>
-      <a href="https://tanki.onlyax.com/" target="_blank" class="link-card">
+      <a href="https://lestatranslate.xyz/" target="_blank" class="link-card">
         <div class="link-content">
           <span class="link-name">LocalizedTanki</span>
           <span class="link-desc">A team providing multi-language (EN, PL, DE, KO, etc.) localizations for Мир танков</span>
