@@ -97,7 +97,7 @@ layout: home
       <a href="https://lestatranslate.xyz/" target="_blank" class="link-card">
         <div class="link-content">
           <span class="link-name">LocalizedTanki</span>
-          <span class="link-desc">A team providing multi-language (EN, PL, DE, KO, etc.) localizations for Мир танков</span>
+          <span class="link-desc">A team providing multi-language (EN, PL, DE, ES, KO, etc.) localizations for Мир танков</span>
         </div>
       </a>
     </div>

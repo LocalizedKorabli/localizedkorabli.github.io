@@ -99,7 +99,7 @@ layout: home
     <a href="https://lestatranslate.xyz/" target="_blank" class="link-card">
       <div class="link-content">
         <span class="link-name">LocalizedTanki</span>
-        <span class="link-desc">Мир танков の多言語（英語、ポーランド語、ドイツ語、韓国語等）ローカライズを提供</span>
+        <span class="link-desc">Мир танков の多言語（英語、ポーランド語、ドイツ語、スペイン語、韓国語等）ローカライズを提供</span>
       </div>
     </a>
   </div>
