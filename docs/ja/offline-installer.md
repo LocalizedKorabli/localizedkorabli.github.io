@@ -26,9 +26,14 @@ layout: page
   <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 600px; margin: 0 auto;">
     特定バージョン対応、ポータブルなワンクリック・ローカライズ・インストーラー
   </p>
-  <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
-    <a class="vp-button brand" href="https://nightly.link/localizedkorabli/l10n-live-release/workflows/pack/main/l10n-ja-live.zip" target="_blank">正式版パック</a>
-    <a class="vp-button alt" href="https://nightly.link/localizedkorabli/l10n-pt-release/workflows/pack/main/l10n-ja-pt.zip" target="_blank">PT 版パック</a>
+  <div style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <div style="display: flex; gap: 12px; justify-content: center;">
+      <a class="vp-button brand" href="https://nightly.link/localizedkorabli/l10n-live-release/workflows/pack/main/l10n-en-live.zip" target="_blank">正式版パック</a>
+      <a class="vp-button alt" href="https://nightly.link/localizedkorabli/l10n-pt-release/workflows/pack/main/l10n-en-pt.zip" target="_blank">PT 版パック</a>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-top: 8px;">
+      ダウンロード提供: <a href="https://nightly.link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 3px; opacity: 0.8;">nightly.link</a>
+    </p>
   </div>
 </header>
 
