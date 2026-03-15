@@ -27,8 +27,8 @@ layout: page
     特定バージョン対応、ポータブルなワンクリック・ローカライズ・インストーラー
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
-    <a class="vp-button brand" href="https://nightly.link/localizedkorabli/l10n-live-release/workflows/pack/main/l10n-ja-live.zip" target="_blank">正式版クライアント用パック</a>
-    <a class="vp-button alt" href="https://nightly.link/localizedkorabli/l10n-pt-release/workflows/pack/main/l10n-ja-pt.zip" target="_blank">PT 版クライアント用パック</a>
+    <a class="vp-button brand" href="https://nightly.link/localizedkorabli/l10n-live-release/workflows/pack/main/l10n-ja-live.zip" target="_blank">正式版パック</a>
+    <a class="vp-button alt" href="https://nightly.link/localizedkorabli/l10n-pt-release/workflows/pack/main/l10n-ja-pt.zip" target="_blank">PT 版パック</a>
   </div>
 </header>
 
