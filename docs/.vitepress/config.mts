@@ -13,6 +13,13 @@ export default defineConfig({
       lang: 'zh-CN',
       link: '/chs/',
       themeConfig: {
+        darkModeSwitchLabel: '外观',
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
+        sidebarMenuLabel: '菜单',
+        returnToTopLabel: '返回顶部',
+        langMenuLabel: '选择语言',
+        outline: { label: '本页目录' },
         nav: [
           { text: '首页', link: '/chs/' },
           { text: '下载', link: '/chs/lk-next' },
@@ -66,6 +73,13 @@ export default defineConfig({
       lang: 'zh-TW',
       link: '/cht/',
       themeConfig: {
+        darkModeSwitchLabel: '外觀',
+        lightModeSwitchTitle: '切換至淺色模式',
+        darkModeSwitchTitle: '切換至深色模式',
+        sidebarMenuLabel: '選單',
+        returnToTopLabel: '返回頂部',
+        langMenuLabel: '選擇語言',
+        outline: { label: '本頁目錄' },
         nav: [
           { text: '首頁', link: '/cht/' },
           { text: '下載', link: '/cht/lk-next' },
@@ -93,6 +107,13 @@ export default defineConfig({
       lang: 'ja-JP',
       link: '/ja/',
       themeConfig: {
+        darkModeSwitchLabel: '外観',
+        lightModeSwitchTitle: 'ライトモードに切り替え',
+        darkModeSwitchTitle: 'ダークモードに切り替え',
+        sidebarMenuLabel: 'メニュー',
+        returnToTopLabel: 'トップに戻る',
+        langMenuLabel: '言語切り替え',
+        outline: { label: 'このページの内容' },
         nav: [
           { text: 'ホーム', link: '/ja/' },
           { text: 'ダウンロード', link: '/ja/lk-next' },
