@@ -28,8 +28,8 @@ layout: page
   </p>
   <div style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 12px;">
     <div style="display: flex; gap: 12px; justify-content: center;">
-      <a class="vp-button brand" href="https://nightly.link/localizedkorabli/l10n-live-release/workflows/pack/main/l10n-en-live.zip" target="_blank">正式服離綫包</a>
-      <a class="vp-button alt" href="https://nightly.link/localizedkorabli/l10n-pt-release/workflows/pack/main/l10n-en-pt.zip" target="_blank">PT 服離綫包</a>
+      <a class="vp-button brand" href="https://nightly.link/localizedkorabli/l10n-live-release/workflows/pack/main/l10n-cht-live.zip" target="_blank">正式服離綫包</a>
+      <a class="vp-button alt" href="https://nightly.link/localizedkorabli/l10n-pt-release/workflows/pack/main/l10n-cht-pt.zip" target="_blank">PT 服離綫包</a>
     </div>
     <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-top: 8px;">
       下載服務由 <a href="https://nightly.link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 3px; opacity: 0.8;">nightly.link</a> 提供技術支援
