@@ -134,6 +134,39 @@ export default defineConfig({
         },
         logoLink: '/ja/'
       }
+    },
+    ru: {
+      label: 'Русский',
+      lang: 'ru-RU',
+      link: '/ru/',
+      themeConfig: {
+          darkModeSwitchLabel: 'Оформление',
+          lightModeSwitchTitle: 'Переключиться на светлую тему',
+          darkModeSwitchTitle: 'Переключиться на тёмную тему',
+          sidebarMenuLabel: 'Меню',
+          returnToTopLabel: 'Наверх',
+          langMenuLabel: 'Выбрать язык',
+          outline: { label: 'Содержание страницы' },
+        nav: [
+          { text: 'Главная', link: '/ru/' },
+          { text: 'Скачать', link: '/ru/lk-next' },
+          { text: 'О проекте', link: '/ru/about' }
+        ],
+        sidebar: [
+          {
+            text: 'Загрузить локализацию',
+            items: [
+              { text: 'Онлайн-установщик', link: '/ru/lk-next' },
+              { text: 'Офлайн-пакеты (англ.)', link: '/ru/offline-installer' }
+            ]
+          }
+        ],
+        footer: {
+          message: 'Команда и проект не связаны с Леста Игры. Все игровые ресурсы являются собственностью их соответствующих владельцев.',
+          copyright: `© 2023–${new Date().getFullYear()} LocalizedKorabli. Все права защищены.`
+        },
+        logoLink: '/ru/'
+      }
     }
   },
   head: [
