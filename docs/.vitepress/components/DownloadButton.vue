@@ -75,7 +75,7 @@ const texts: Record<Locale, {
     win7Kb2: 'KB2999226',
     close: '关闭',
     extraChannels: [
-      { label: '官方下载 (中国大陆)', desc: '从位于中国大陆的澪刻官方镜像服务器下载', url: 'https://lkdl.localizedkorabli.cn/lki/lk-next/lki_setup.exe' },
+      { label: '官方下载 (中国大陆)', desc: '从位于中国大陆的澪刻官方镜像服务器下载', url: 'http://lkdl.localizedkorabli.cn/lki/lk-next/lki_setup.exe' },
       { label: '蓝奏云下载', desc: '通过蓝奏云分享下载', url: 'https://tapio.lanzouu.com/b0nzmcv9i' },
     ],
   },
