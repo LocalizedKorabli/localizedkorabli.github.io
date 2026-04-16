@@ -41,8 +41,8 @@ watch(isOpen, (val) => {
 })
 
 const DIRECT_URL = 'https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe'
-const KB3063858_URL = 'https://catalog.update.microsoft.com/search.aspx?q=KB3063858+windows+7+x64'
-const KB2999226_URL = 'https://catalog.update.microsoft.com/search.aspx?q=KB2999226+windows+7+x64'
+const KB3063858_URL = 'https://download.microsoft.com/download/0/8/e/08e0386b-f6af-4651-8d1b-c0a95d2731f0/Windows6.1-KB3063858-x64.msu'
+const KB2999226_URL = 'https://download.microsoft.com/download/1/1/5/11565a9a-ea09-4f0a-a57e-520d5d138140/Windows6.1-KB2999226-x64.msu'
 
 const texts: Record<Locale, {
   btnText: string
