@@ -21,13 +21,13 @@ layout: page
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   ">
-    澪刻·在地化安裝器 Next
+    澪刻 Next
   </h1>
   <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 650px; margin: 0 auto;">
     專門為安裝 Мир кораблей 在地化模組打造的線上自動安裝器
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
-    <a class="vp-button brand" href="https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe" target="_blank">下載</a>
+    <DownloadButton locale="cht" />
     <a class="vp-button alt" href="https://github.com/LocalizedKorabli/LKInstaller-Next" target="_blank">專案倉庫</a>
   </div>
 </header>

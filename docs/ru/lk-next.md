@@ -21,13 +21,13 @@ layout: page
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   ">
-    Онлайн-установщик LK
+    LK Next
   </h1>
   <p style="font-size: 1.4rem; color: var(--vp-c-text-2); max-width: 500px; margin: 0 auto;">
     Онлайн-установщик для пакетов локализации Мира кораблей
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 12px; justify-content: center;">
-    <a class="vp-button brand" href="https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe" target="_blank">Скачать</a>
+    <DownloadButton locale="ru" />
     <a class="vp-button alt" href="https://github.com/LocalizedKorabli/LKInstaller-Next" target="_blank">Репозиторий проекта</a>
   </div>
 </header>
