@@ -151,6 +151,7 @@ const hasStore = computed(() => !!props.storeUrl)
   </button>
 
   <Teleport v-if="isMounted" to="body">
+    <Transition name="dm">
     <div v-if="isOpen" class="dm-backdrop" @click="onBackdropClick">
       <div class="dm-modal" role="dialog" aria-modal="true">
         <div class="dm-header">
@@ -233,10 +234,33 @@ const hasStore = computed(() => !!props.storeUrl)
         </div>
       </div>
     </div>
+    </Transition>
   </Teleport>
 </template>
 
 <style scoped>
+/* ── Modal transition ── */
+.dm-enter-active,
+.dm-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.dm-enter-active .dm-modal,
+.dm-leave-active .dm-modal {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.dm-enter-from,
+.dm-leave-to {
+  opacity: 0;
+}
+
+.dm-enter-from .dm-modal,
+.dm-leave-to .dm-modal {
+  transform: scale(0.96) translateY(-10px);
+  opacity: 0;
+}
+
 .dm-trigger {
   cursor: pointer;
   border: none;
