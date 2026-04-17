@@ -3,12 +3,9 @@ import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 
 type Locale = 'chs' | 'cht' | 'en' | 'ja' | 'ru'
 
-const props = withDefaults(defineProps<{
+const props = defineProps<{
   locale: Locale
-  storeUrl?: string
-}>(), {
-  storeUrl: ''
-})
+}>()
 
 const isOpen = ref(false)
 const isMounted = ref(false)
@@ -41,53 +38,77 @@ watch(isOpen, (val) => {
 })
 
 const DIRECT_URL = 'https://dl.localizedkorabli.org/lki/lk-next/lki_setup.exe'
+const STORE_PROTOCOL_URL = 'ms-windows-store://pdp/?productid=9P6S2T9MJTXQ'
+const MSIX_URL = 'https://dl.localizedkorabli.org/lki/lk-next/lki_setup.Msix'
 const KB3063858_URL = 'https://download.microsoft.com/download/0/8/e/08e0386b-f6af-4651-8d1b-c0a95d2731f0/Windows6.1-KB3063858-x64.msu'
 const KB2999226_URL = 'https://download.microsoft.com/download/1/1/5/11565a9a-ea09-4f0a-a57e-520d5d138140/Windows6.1-KB2999226-x64.msu'
 
 const texts: Record<Locale, {
   btnText: string
   modalTitle: string
+  msixColTitle: string
+  msixColNote: string
+  exeColTitle: string
+  exeColNote: string
   directLabel: string
   directDesc: string
   storeLabel: string
   storeDesc: string
   storeBtn: string
-  storeSoon: string
+  msixLabel: string
+  msixDesc: string
   win7Title: string
   win7Body: string
   win7Kb3: string
   win7Kb2: string
   close: string
+  topChannels?: { label: string; desc: string; url: string }[]
   extraChannels?: { label: string; desc: string; url: string }[]
+  msixExtraChannels?: { label: string; desc: string; url: string }[]
 }> = {
   chs: {
     btnText: '下载',
     modalTitle: '下载澪刻 Next',
+    msixColTitle: 'MSIX 安装程序',
+    msixColNote: '支持 Windows 10/11',
+    exeColTitle: 'EXE 安装程序',
+    exeColNote: '支持 Windows 7/8/10/11',
     directLabel: '官方下载 (全球)',
-    directDesc: '从澪刻官方服务器下载',
+    directDesc: '从海外服务器下载 EXE 安装程序',
     storeLabel: 'Microsoft Store',
-    storeDesc: '通过 Microsoft Store 下载',
+    storeDesc: '通过 Microsoft Store 安装',
     storeBtn: '前往商店',
-    storeSoon: '即将上架',
+    msixLabel: '官方下载 (全球)',
+    msixDesc: '从海外服务器下载 MSIX 安装程序',
     win7Title: 'Windows 7 用户须知',
     win7Body: '若您在 Windows 7 环境下无法运行此软件，请先尝试依序安装以下补丁：',
     win7Kb3: 'KB3063858',
     win7Kb2: 'KB2999226',
     close: '关闭',
+    topChannels: [
+      { label: '蓝奏云下载', desc: '从蓝奏云分享下载 EXE 安装程序', url: 'https://tapio.lanzouu.com/b0nzmcv9i' },
+    ],
     extraChannels: [
-      { label: '官方下载 (中国大陆)', desc: '从位于中国大陆的澪刻官方镜像服务器下载', url: 'http://lkdl.localizedkorabli.cn/lki/lk-next/lki_setup.exe' },
-      { label: '蓝奏云下载', desc: '通过蓝奏云分享下载', url: 'https://tapio.lanzouu.com/b0nzmcv9i' },
+      { label: '官方下载 (中国大陆)', desc: '从境内服务器下载 EXE 安装程序', url: 'http://lkdl.localizedkorabli.cn/lki/lk-next/lki_setup.exe' },
+    ],
+    msixExtraChannels: [
+      { label: '官方下载 (中国大陆)', desc: '从境内服务器下载 MSIX 安装程序', url: 'http://lkdl.localizedkorabli.cn/lki/lk-next/lki_setup.Msix' },
     ],
   },
   cht: {
     btnText: '下載',
     modalTitle: '下載澪刻 Next',
+    msixColTitle: 'MSIX 安裝程式',
+    msixColNote: '支援 Windows 10/11',
+    exeColTitle: 'EXE 安裝程式',
+    exeColNote: '支援 Windows 7/8/10/11',
     directLabel: '官方下載',
-    directDesc: '從澪刻官方伺服器下載',
+    directDesc: '直接下載 EXE 安裝程式',
     storeLabel: 'Microsoft Store',
-    storeDesc: '透過 Microsoft Store 下載',
+    storeDesc: '透過 Microsoft Store 安裝',
     storeBtn: '前往商店',
-    storeSoon: '即將上架',
+    msixLabel: '官方下載',
+    msixDesc: '直接下載 MSIX 安裝程式',
     win7Title: 'Windows 7 使用者注意',
     win7Body: '若您在 Windows 7 環境下無法執行此軟體，請先嘗試依序安裝以下補丁：',
     win7Kb3: 'KB3063858',
@@ -97,12 +118,17 @@ const texts: Record<Locale, {
   en: {
     btnText: 'Download',
     modalTitle: 'Download LK Next',
-    directLabel: 'Direct Download (Official)',
-    directDesc: 'Download directly from the LocalizedKorabli\'s official server',
+    msixColTitle: 'MSIX Installer',
+    msixColNote: 'Windows 10/11',
+    exeColTitle: 'EXE Installer',
+    exeColNote: 'Windows 7/8/10/11',
+    directLabel: 'Direct Download',
+    directDesc: 'Download the EXE installer directly',
     storeLabel: 'Microsoft Store',
-    storeDesc: 'Download via Microsoft Store',
+    storeDesc: 'Install via Microsoft Store',
     storeBtn: 'Get from Store',
-    storeSoon: 'Coming Soon',
+    msixLabel: 'Direct Download',
+    msixDesc: 'Download the MSIX installer directly',
     win7Title: 'Windows 7 Users',
     win7Body: 'If the application fails to launch on Windows 7, try installing the following patches in order:',
     win7Kb3: 'KB3063858',
@@ -112,12 +138,17 @@ const texts: Record<Locale, {
   ja: {
     btnText: 'ダウンロード',
     modalTitle: '澪刻 Next をダウンロード',
+    msixColTitle: 'MSIX インストーラー',
+    msixColNote: 'Windows 10/11 対応',
+    exeColTitle: 'EXE インストーラー',
+    exeColNote: 'Windows 7/8/10/11 対応',
     directLabel: '直接ダウンロード',
-    directDesc: '澪刻公式サーバーから直接ダウンロード',
+    directDesc: 'EXE インストーラーを直接ダウンロード',
     storeLabel: 'Microsoft Store',
-    storeDesc: 'Microsoft Store 経由でダウンロード',
+    storeDesc: 'Microsoft Store 経由でインストール',
     storeBtn: 'Store を開く',
-    storeSoon: '近日公開',
+    msixLabel: '直接ダウンロード',
+    msixDesc: 'MSIX インストーラーを直接ダウンロード',
     win7Title: 'Windows 7 をお使いの方へ',
     win7Body: 'Windows 7 でこのソフトが起動しない場合は、以下の更新プログラムを順番にインストールしてみてください：',
     win7Kb3: 'KB3063858',
@@ -127,12 +158,17 @@ const texts: Record<Locale, {
   ru: {
     btnText: 'Скачать',
     modalTitle: 'Скачать LK Next',
+    msixColTitle: 'MSIX-установщик',
+    msixColNote: 'Windows 10/11',
+    exeColTitle: 'EXE-установщик',
+    exeColNote: 'Windows 7/8/10/11',
     directLabel: 'Прямая загрузка',
-    directDesc: 'Загрузить напрямую с официального сервера LocalizedKorabli',
+    directDesc: 'Загрузить EXE-установщик напрямую',
     storeLabel: 'Microsoft Store',
-    storeDesc: 'Загрузить через Microsoft Store',
+    storeDesc: 'Установить через Microsoft Store',
     storeBtn: 'Открыть в Store',
-    storeSoon: 'Скоро',
+    msixLabel: 'Прямая загрузка',
+    msixDesc: 'Загрузить MSIX-установщик напрямую',
     win7Title: 'Для пользователей Windows 7',
     win7Body: 'Если приложение не запускается на Windows 7, попробуйте установить следующие обновления в указанном порядке:',
     win7Kb3: 'KB3063858',
@@ -142,7 +178,6 @@ const texts: Record<Locale, {
 }
 
 const t = computed(() => texts[props.locale])
-const hasStore = computed(() => !!props.storeUrl)
 </script>
 
 <template>
@@ -159,65 +194,112 @@ const hasStore = computed(() => !!props.storeUrl)
           <button class="dm-close" @click="closeModal" :aria-label="t.close">✕</button>
         </div>
 
-        <div class="dm-options">
-          <!-- Microsoft Store -->
-          <a
-            v-if="hasStore"
-            class="dm-option"
-            :href="storeUrl"
-            target="_blank"
-            rel="noopener noreferrer"
-            @click="closeModal"
-          >
-            <div class="dm-option-icon dm-icon-store">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <div class="dm-columns">
+          <!-- Left: MSIX -->
+          <div class="dm-col">
+            <div class="dm-col-header">
+              <span>{{ t.msixColTitle }}</span>
+              <span class="dm-col-note">{{ t.msixColNote }}</span>
             </div>
-            <div class="dm-option-body">
-              <div class="dm-option-label">{{ t.storeLabel }}</div>
-              <div class="dm-option-desc">{{ t.storeDesc }}</div>
+            <div class="dm-col-options">
+              <!-- Microsoft Store -->
+              <a class="dm-option" :href="STORE_PROTOCOL_URL" target="_blank" rel="noopener noreferrer" @click="closeModal">
+                <div class="dm-option-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <div class="dm-option-body">
+                  <div class="dm-option-label">{{ t.storeLabel }}</div>
+                  <div class="dm-option-desc">{{ t.storeDesc }}</div>
+                </div>
+              </a>
+              <!-- MSIX Package -->
+              <a class="dm-option" :href="MSIX_URL" target="_blank" rel="noopener noreferrer" @click="closeModal">
+                <div class="dm-option-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <div class="dm-option-body">
+                  <div class="dm-option-label">{{ t.msixLabel }}</div>
+                  <div class="dm-option-desc">{{ t.msixDesc }}</div>
+                </div>
+              </a>
+              <!-- MSIX extra channels (locale-specific) -->
+              <a
+                v-for="ch in t.msixExtraChannels"
+                :key="ch.url"
+                class="dm-option"
+                :href="ch.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                @click="closeModal"
+              >
+                <div class="dm-option-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <div class="dm-option-body">
+                  <div class="dm-option-label">{{ ch.label }}</div>
+                  <div class="dm-option-desc">{{ ch.desc }}</div>
+                </div>
+              </a>
             </div>
-            <span class="dm-option-badge dm-badge-brand">{{ t.storeBtn }}</span>
-          </a>
-          <div v-else class="dm-option dm-option-disabled">
-            <div class="dm-option-icon dm-icon-store">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            </div>
-            <div class="dm-option-body">
-              <div class="dm-option-label">{{ t.storeLabel }}</div>
-              <div class="dm-option-desc">{{ t.storeDesc }}</div>
-            </div>
-            <span class="dm-option-badge dm-badge-soon">{{ t.storeSoon }}</span>
           </div>
 
-          <!-- Direct Download -->
-          <a class="dm-option" :href="DIRECT_URL" target="_blank" rel="noopener noreferrer" @click="closeModal">
-            <div class="dm-option-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </div>
-            <div class="dm-option-body">
-              <div class="dm-option-label">{{ t.directLabel }}</div>
-              <div class="dm-option-desc">{{ t.directDesc }}</div>
-            </div>
-          </a>
+          <div class="dm-col-divider"></div>
 
-          <!-- Extra channels (locale-specific) -->
-          <a
-            v-for="ch in t.extraChannels"
-            :key="ch.url"
-            class="dm-option"
-            :href="ch.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            @click="closeModal"
-          >
-            <div class="dm-option-icon dm-icon-extra">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <!-- Right: EXE -->
+          <div class="dm-col">
+            <div class="dm-col-header">
+              <span>{{ t.exeColTitle }}</span>
+              <span class="dm-col-note">{{ t.exeColNote }}</span>
             </div>
-            <div class="dm-option-body">
-              <div class="dm-option-label">{{ ch.label }}</div>
-              <div class="dm-option-desc">{{ ch.desc }}</div>
+            <div class="dm-col-options">
+              <!-- Top channels (before direct URL, locale-specific) -->
+              <a
+                v-for="ch in t.topChannels"
+                :key="ch.url"
+                class="dm-option"
+                :href="ch.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                @click="closeModal"
+              >
+                <div class="dm-option-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </div>
+                <div class="dm-option-body">
+                  <div class="dm-option-label">{{ ch.label }}</div>
+                  <div class="dm-option-desc">{{ ch.desc }}</div>
+                </div>
+              </a>
+              <!-- Direct Download -->
+              <a class="dm-option" :href="DIRECT_URL" target="_blank" rel="noopener noreferrer" @click="closeModal">
+                <div class="dm-option-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </div>
+                <div class="dm-option-body">
+                  <div class="dm-option-label">{{ t.directLabel }}</div>
+                  <div class="dm-option-desc">{{ t.directDesc }}</div>
+                </div>
+              </a>
+              <!-- Extra channels (after direct URL, locale-specific) -->
+              <a
+                v-for="ch in t.extraChannels"
+                :key="ch.url"
+                class="dm-option"
+                :href="ch.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                @click="closeModal"
+              >
+                <div class="dm-option-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </div>
+                <div class="dm-option-body">
+                  <div class="dm-option-label">{{ ch.label }}</div>
+                  <div class="dm-option-desc">{{ ch.desc }}</div>
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
 
         <!-- Windows 7 Notice -->
@@ -286,7 +368,7 @@ const hasStore = computed(() => !!props.storeUrl)
   border: 1px solid var(--vp-c-divider);
   border-radius: 16px;
   width: 100%;
-  max-width: 500px;
+  max-width: 680px;
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
@@ -327,20 +409,62 @@ const hasStore = computed(() => !!props.storeUrl)
   color: var(--vp-c-text-1);
 }
 
-/* ── Download Options ── */
-.dm-options {
-  padding: 16px 24px;
+/* ── Two-column layout ── */
+.dm-columns {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0;
+  padding: 16px 20px;
+}
+
+.dm-col {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  min-width: 0;
+}
+
+.dm-col-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+
+.dm-col-header > span:first-child {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--vp-c-text-2);
+}
+
+.dm-col-note {
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--vp-c-text-3, var(--vp-c-text-2));
+  opacity: 0.75;
+}
+
+.dm-col-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dm-col-divider {
+  width: 1px;
+  background: var(--vp-c-divider);
+  margin: 0 16px;
+  align-self: stretch;
 }
 
 .dm-option {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 14px 16px;
-  border-radius: 12px;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
   border: 1px solid var(--vp-c-divider);
   background: var(--vp-c-bg-soft);
   text-decoration: none !important;
@@ -348,14 +472,9 @@ const hasStore = computed(() => !!props.storeUrl)
   cursor: pointer;
 }
 
-.dm-option:not(.dm-option-disabled):hover {
+.dm-option:hover {
   border-color: var(--vp-c-brand-1);
   background: var(--vp-c-bg-mute);
-}
-
-.dm-option-disabled {
-  opacity: 0.6;
-  cursor: default;
 }
 
 .dm-option-icon {
@@ -365,13 +484,6 @@ const hasStore = computed(() => !!props.storeUrl)
   align-items: center;
 }
 
-.dm-icon-store {
-  color: var(--vp-c-text-2);
-}
-
-.dm-icon-extra {
-  color: var(--vp-c-text-2);
-}
 
 .dm-option-body {
   flex: 1;
@@ -380,36 +492,29 @@ const hasStore = computed(() => !!props.storeUrl)
 
 .dm-option-label {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--vp-c-text-1);
   line-height: 1.3;
 }
 
 .dm-option-desc {
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   color: var(--vp-c-text-2);
   margin-top: 2px;
   line-height: 1.4;
 }
 
-.dm-option-badge {
-  flex-shrink: 0;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
+@media (max-width: 480px) {
+  .dm-columns {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
 
-.dm-badge-brand {
-  background: var(--vp-button-brand-bg);
-  color: var(--vp-button-brand-text);
-}
-
-.dm-badge-soon {
-  background: var(--vp-c-bg-mute);
-  color: var(--vp-c-text-2);
-  border: 1px solid var(--vp-c-divider);
+  .dm-col-divider {
+    width: auto;
+    height: 1px;
+    margin: 12px 0;
+  }
 }
 
 /* ── Win7 Notice ── */
