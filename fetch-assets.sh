@@ -16,6 +16,9 @@ echo "📦 Fetching artifact metadata..."
 fetch_json "metadata/lateral/metadata.json" \
   "https://raw.githubusercontent.com/LocalizedKorabli/LK-Lateral/main/metadata.json"
 
+fetch_json "metadata/lgc/l10n.json" \
+  "https://raw.githubusercontent.com/LocalizedKorabli/LestaGameCenterL10n/main/metadata/l10n.json"
+
 # To add a new file:
 # fetch_json "metadata/ships/summary.json" \
 #   "https://raw.githubusercontent.com/xxx/ships-repo/main/summary.json"
