@@ -6,6 +6,20 @@ html {
   overflow-y: scroll;
 }
 
+/* 隐藏导航栏底部的分隔细线（容器与线本身均上色，需一并覆盖；
+   限定 .VPNavBar 以免误伤 about 页等其他 .divider；
+   原规则带 :not() 特异性更高，故用 !important） */
+.VPNavBar .divider,
+.VPNavBar .divider-line {
+  background-color: transparent !important;
+}
+
+/* 同色（--vp-c-gutter）的另一条顶部 chrome 线：本地导航条底边
+   （窄屏/有页面大纲时出现），一并中和，保持顶部无细线 */
+.VPLocalNav {
+  border-bottom-color: transparent !important;
+}
+
 .vp-doc .vp-button {
   display: inline-block;
   border: 1px solid transparent;
@@ -212,8 +226,11 @@ html {
   color: var(--vp-c-brand-1);
 }
 
-/* 7. 辅助元素 */
-.divider {
+/* 7. 辅助元素 —— 必须限定 .custom-about-page，
+   否则未限定的 .divider 会命中 VitePress 导航栏自带的 .divider 元素，
+   给它套上 margin:60px + border-top + opacity:.1，
+   把导航栏分隔线下移到 logo 处显示成一条极浅的细线 */
+.custom-about-page .divider {
   margin: 60px 0;
   opacity: 0.1;
   border: 0;
