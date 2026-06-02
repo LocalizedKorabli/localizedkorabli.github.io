@@ -310,15 +310,13 @@ html {
   }
 }
 
-/* 自定义页（lk-next / lk-lateral / 离线包）的 hero header 与首页 hero */
-.vp-doc header,
+/* 仅首页 hero 入场（lk-next / lk-lateral / 离线包等内容页不需要） */
 .VPHome .VPHero {
   animation: lk-hero-enter 0.45s ease-out both;
 }
 
 /* 尊重用户的「减少动态效果」系统设置 */
 @media (prefers-reduced-motion: reduce) {
-  .vp-doc header,
   .VPHome .VPHero {
     animation: none;
   }
