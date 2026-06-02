@@ -23,6 +23,4 @@ features:
     details: We strictly follow Live/PT server update schedules. Get your localization packs immediately upon version release with zero lag.
   - title: Multi-language Support
     details: Currently covering English, Simplified Chinese, Traditional Chinese, and Japanese. Bridging the gap for players across all regions.
-  - title: LGC & МОСТ Localization
-    details: Our brand-new LK Lateral installer is purpose-built for the LGC and МОСТ localizations, adding more localized content to your game in a single click.
 ---

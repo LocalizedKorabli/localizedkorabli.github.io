@@ -231,8 +231,7 @@ export default defineConfig({
   },
   head: [
     ['link', { rel: 'icon', href: '/svg/lki.svg' }],
-    // 预取仅出现在子页面 hero 的 logo（lki.svg 已作为导航栏 logo 全站加载），
-    // 避免站内切换到对应页面时首次显示该 logo 迟滞
+    // Avoid the lag first time loading SVGs
     ['link', { rel: 'prefetch', as: 'image', type: 'image/svg+xml', href: '/svg/lko.svg' }],
     ['link', { rel: 'prefetch', as: 'image', type: 'image/svg+xml', href: '/svg/lateral.svg' }]
   ],
