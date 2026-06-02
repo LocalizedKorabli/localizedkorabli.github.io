@@ -22,15 +22,27 @@ export default defineConfig({
         outline: { label: '本页目录' },
         nav: [
           { text: '首页', link: '/chs/' },
-          { text: '下载', link: '/chs/lk-next' },
+          {
+            text: '下载',
+            items: [
+              { text: '游戏本体本地化', link: '/chs/lk-next' },
+              { text: 'LGC 和 МОСТ 本地化', link: '/chs/lk-lateral' }
+            ]
+          },
           { text: '关于', link: '/chs/about' }
         ],
         sidebar: [
           {
-            text: '下载本地化',
+            text: '游戏本体本地化',
             items: [
               { text: '在线安装器', link: '/chs/lk-next' },
               { text: '离线安装包', link: '/chs/offline-installer' }
+            ]
+          },
+          {
+            text: 'LGC 和 МОСТ 本地化',
+            items: [
+              { text: '澪刻 Lateral', link: '/chs/lk-lateral' }
             ]
           }
         ],
@@ -48,15 +60,27 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
-          { text: 'Download', link: '/en/lk-next' },
+          {
+            text: 'Download',
+            items: [
+              { text: 'Game Client Localization', link: '/en/lk-next' },
+              { text: 'LGC & МОСТ Localization', link: '/en/lk-lateral' }
+            ]
+          },
           { text: 'About', link: '/en/about' }
         ],
         sidebar: [
           {
-            text: 'Download I18n',
+            text: 'Game Client Localization',
             items: [
               { text: 'Online Installer', link: '/en/lk-next' },
               { text: 'Offline Installer', link: '/en/offline-installer' }
+            ]
+          },
+          {
+            text: 'LGC & МОСТ Localization',
+            items: [
+              { text: 'LK Lateral', link: '/en/lk-lateral' }
             ]
           }
         ],
@@ -82,15 +106,27 @@ export default defineConfig({
         outline: { label: '本頁目錄' },
         nav: [
           { text: '首頁', link: '/cht/' },
-          { text: '下載', link: '/cht/lk-next' },
+          {
+            text: '下載',
+            items: [
+              { text: '遊戲本體在地化', link: '/cht/lk-next' },
+              { text: 'LGC 和 МОСТ 在地化', link: '/cht/lk-lateral' }
+            ]
+          },
           { text: '關於', link: '/cht/about' }
         ],
         sidebar: [
           {
-            text: '下載在地化',
+            text: '遊戲本體在地化',
             items: [
               { text: '線上安裝程式', link: '/cht/lk-next' },
               { text: '離綫安裝程式', link: '/cht/offline-installer' }
+            ]
+          },
+          {
+            text: 'LGC 和 МОСТ 在地化',
+            items: [
+              { text: '澪刻 Lateral', link: '/cht/lk-lateral' }
             ]
           }
         ],
@@ -116,15 +152,27 @@ export default defineConfig({
         outline: { label: 'このページの内容' },
         nav: [
           { text: 'ホーム', link: '/ja/' },
-          { text: 'ダウンロード', link: '/ja/lk-next' },
+          {
+            text: 'ダウンロード',
+            items: [
+              { text: 'ゲーム本体ローカライズ', link: '/ja/lk-next' },
+              { text: 'LGC・МОСТ ローカライズ', link: '/ja/lk-lateral' }
+            ]
+          },
           { text: 'について', link: '/ja/about' }
         ],
         sidebar: [
           {
-            text: 'ダウンロード',
+            text: 'ゲーム本体ローカライズ',
             items: [
               { text: 'オンライン自動インストーラー', link: '/ja/lk-next' },
               { text: 'オフライン L10n パッケージ', link: '/ja/offline-installer' }
+            ]
+          },
+          {
+            text: 'LGC・МОСТ ローカライズ',
+            items: [
+              { text: '澪刻 Lateral', link: '/ja/lk-lateral' }
             ]
           }
         ],
@@ -149,15 +197,27 @@ export default defineConfig({
           outline: { label: 'Содержание страницы' },
         nav: [
           { text: 'Главная', link: '/ru/' },
-          { text: 'Скачать', link: '/ru/lk-next' },
+          {
+            text: 'Скачать',
+            items: [
+              { text: 'Локализация клиента игры', link: '/ru/lk-next' },
+              { text: 'Локализация LGC и МОСТ', link: '/ru/lk-lateral' }
+            ]
+          },
           { text: 'О проекте', link: '/ru/about' }
         ],
         sidebar: [
           {
-            text: 'Загрузить локализацию',
+            text: 'Локализация клиента игры',
             items: [
               { text: 'Онлайн-установщик', link: '/ru/lk-next' },
               { text: 'Офлайн-пакеты (англ.)', link: '/ru/offline-installer' }
+            ]
+          },
+          {
+            text: 'Локализация LGC и МОСТ',
+            items: [
+              { text: 'LK Lateral', link: '/ru/lk-lateral' }
             ]
           }
         ],

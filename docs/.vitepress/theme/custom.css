@@ -35,6 +35,24 @@ html {
   color: var(--vp-button-brand-text) !important; /* 强制文字颜色保持不变 */
 }
 
+/* 澪刻 Lateral 下载按钮：橙色 (#FF9900)，文字沿用 brand 的白色 */
+.vp-doc .vp-button.brand.lateral-dl {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+
+/* 浅色模式 hover 变深 */
+.vp-doc .vp-button.brand.lateral-dl:hover {
+  background-color: #e68a00;
+  border-color: #e68a00;
+}
+
+/* 深色模式 hover 变浅，与其他页面 brand 按钮行为对齐 */
+.dark .vp-doc .vp-button.brand.lateral-dl:hover {
+  background-color: #ffad33;
+  border-color: #ffad33;
+}
+
 /* Alt 按钮：灰色背景，深色字 */
 .vp-doc .vp-button.alt {
   border-color: var(--vp-button-alt-border);
@@ -253,4 +271,26 @@ html {
   .links-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ============================================================
+   澪刻 Lateral 页面：仅「核心特性」磁贴用橙色调 (#FF9900)
+   「全面支持」磁贴沿用默认次要灰色；两张磁贴均不描边
+   仅作用于 .lateral-features 容器，不影响 lk-next 等页面
+   ============================================================ */
+
+/* 两张磁贴均去掉外描边 */
+.lateral-features .custom-block.tip,
+.lateral-features .custom-block.info {
+  border-color: transparent;
+}
+
+/* 核心特性磁贴：橙色背景 + 橙色标题/链接 */
+.lateral-features .custom-block.tip {
+  background-color: rgba(255, 153, 0, 0.08);
+}
+
+.lateral-features .custom-block.tip .custom-block-title,
+.lateral-features .custom-block.tip a {
+  color: #ff9900;
 }
