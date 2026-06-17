@@ -16,6 +16,9 @@ echo "📦 Fetching artifact metadata..."
 fetch_json "metadata/lateral/metadata.json" \
   "https://raw.githubusercontent.com/LocalizedKorabli/LK-Lateral/main/metadata.json"
 
+fetch_json "metadata/derivercrabify/metadata.json" \
+  "https://raw.githubusercontent.com/LocalizedKorabli/Derivercrabify/main/metadata.json"
+
 fetch_json "metadata/lgc/l10n.json" \
   "https://raw.githubusercontent.com/LocalizedKorabli/LestaGameCenterL10n/main/metadata/l10n.json"
 
