@@ -16,7 +16,7 @@ echo "📦 Fetching artifact metadata..."
 fetch_json "metadata/lateral/metadata.json" \
   "https://raw.githubusercontent.com/LocalizedKorabli/LK-Lateral/main/metadata.json"
 
-fetch_json "metadata/tomatoradar/app/metadata.json" \
+fetch_json "metadata/tomatoradar/metadata.json" \
   "https://raw.githubusercontent.com/OpenKorabli/TomatoRadar/main/metadata.json"
 
 fetch_json "metadata/derivercrabify/metadata.json" \
