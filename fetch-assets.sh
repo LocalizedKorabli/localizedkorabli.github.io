@@ -29,7 +29,7 @@ fetch_json "metadata/most/l10n.json" \
   "https://raw.githubusercontent.com/LocalizedKorabli/most-korabli-l10n/main/metadata/l10n.json"
 
 fetch_json "metadata/fonts/metadata.json" \
-  "https://raw.githubusercontent.com/LocalizedKorabli/SrcWagon/main/metadata.json"
+  "https://raw.githubusercontent.com/LocalizedKorabli/MKFonts/main/metadata.json"
 
 # To add a new file:
 # fetch_json "metadata/ships/summary.json" \
