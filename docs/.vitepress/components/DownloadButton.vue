@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 
-type Locale = 'chs' | 'cht' | 'en' | 'ja' | 'ru'
+type Locale = 'chs' | 'cht' | 'de' | 'en' | 'es' | 'ja' | 'ru'
 
 const props = defineProps<{
   locale: Locale
@@ -115,6 +115,26 @@ const texts: Record<Locale, {
     win7Kb2: 'KB2999226',
     close: '關閉',
   },
+  de: {
+    btnText: 'Herunterladen',
+    modalTitle: 'LK Next herunterladen',
+    msixColTitle: 'MSIX-Installationsprogramm',
+    msixColNote: 'Windows 10/11',
+    exeColTitle: 'EXE-Installationsprogramm',
+    exeColNote: 'Windows 7/8/10/11',
+    directLabel: 'Direkter Download',
+    directDesc: 'EXE-Installationsprogramm direkt herunterladen',
+    storeLabel: 'Microsoft Store',
+    storeDesc: 'Über den Microsoft Store installieren',
+    storeBtn: 'Zum Store',
+    msixLabel: 'Direkter Download',
+    msixDesc: 'MSIX-Installationsprogramm direkt herunterladen',
+    win7Title: 'Hinweis für Windows 7-Benutzer',
+    win7Body: 'Falls die Anwendung unter Windows 7 nicht startet, installieren Sie bitte die folgenden Patches in dieser Reihenfolge:',
+    win7Kb3: 'KB3063858',
+    win7Kb2: 'KB2999226',
+    close: 'Schließen',
+  },
   en: {
     btnText: 'Download',
     modalTitle: 'Download LK Next',
@@ -134,6 +154,26 @@ const texts: Record<Locale, {
     win7Kb3: 'KB3063858',
     win7Kb2: 'KB2999226',
     close: 'Close',
+  },
+  es: {
+    btnText: 'Descargar',
+    modalTitle: 'Descargar LK Next',
+    msixColTitle: 'Instalador MSIX',
+    msixColNote: 'Windows 10/11',
+    exeColTitle: 'Instalador EXE',
+    exeColNote: 'Windows 7/8/10/11',
+    directLabel: 'Descarga directa',
+    directDesc: 'Descargar el instalador EXE directamente',
+    storeLabel: 'Microsoft Store',
+    storeDesc: 'Instalar a través de Microsoft Store',
+    storeBtn: 'Abrir en Store',
+    msixLabel: 'Descarga directa',
+    msixDesc: 'Descargar el instalador MSIX directamente',
+    win7Title: 'Usuarios de Windows 7',
+    win7Body: 'Si la aplicación no se inicia en Windows 7, prueba a instalar los siguientes parches en orden:',
+    win7Kb3: 'KB3063858',
+    win7Kb2: 'KB2999226',
+    close: 'Cerrar',
   },
   ja: {
     btnText: 'ダウンロード',

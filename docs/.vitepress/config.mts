@@ -91,6 +91,98 @@ export default defineConfig({
         logoLink: '/en/'
       }
     },
+    de: {
+      label: 'Deutsch',
+      title: 'LocalizedKorabli',
+      lang: 'de-DE',
+      link: '/de/',
+      themeConfig: {
+        darkModeSwitchLabel: 'Erscheinungsbild',
+        lightModeSwitchTitle: 'Zum hellen Modus wechseln',
+        darkModeSwitchTitle: 'Zum dunklen Modus wechseln',
+        sidebarMenuLabel: 'Menü',
+        returnToTopLabel: 'Nach oben',
+        langMenuLabel: 'Sprache wählen',
+        outline: { label: 'Auf dieser Seite' },
+        nav: [
+          { text: 'Startseite', link: '/de/' },
+          {
+            text: 'Herunterladen',
+            items: [
+              { text: 'Spielclient-Lokalisierung', link: '/de/lk-next' },
+              { text: 'LGC & МОСТ-Lokalisierung', link: '/de/lk-lateral' }
+            ]
+          },
+          { text: 'Über uns', link: '/de/about' }
+        ],
+        sidebar: [
+          {
+            text: 'Spielclient-Lokalisierung',
+            items: [
+              { text: 'Online-Installationsprogramm', link: '/de/lk-next' },
+              { text: 'Offline-Installationspakete', link: '/de/offline-installer' }
+            ]
+          },
+          {
+            text: 'LGC & МОСТ-Lokalisierung',
+            items: [
+              { text: 'LK Lateral', link: '/de/lk-lateral' }
+            ]
+          }
+        ],
+        footer: {
+          message: 'Das Team und das Projekt stehen in keiner Verbindung zu Леста Игры. Alle Spielressourcen sind Eigentum der jeweiligen Rechteinhaber.',
+          copyright: `© 2023–${new Date().getFullYear()} LocalizedKorabli. Alle Rechte vorbehalten.`
+        },
+        logoLink: '/de/'
+      }
+    },
+    es: {
+      label: 'Español',
+      title: 'LocalizedKorabli',
+      lang: 'es-ES',
+      link: '/es/',
+      themeConfig: {
+        darkModeSwitchLabel: 'Apariencia',
+        lightModeSwitchTitle: 'Cambiar a modo claro',
+        darkModeSwitchTitle: 'Cambiar a modo oscuro',
+        sidebarMenuLabel: 'Menú',
+        returnToTopLabel: 'Volver arriba',
+        langMenuLabel: 'Seleccionar idioma',
+        outline: { label: 'En esta página' },
+        nav: [
+          { text: 'Inicio', link: '/es/' },
+          {
+            text: 'Descargar',
+            items: [
+              { text: 'Localización del juego', link: '/es/lk-next' },
+              { text: 'Localización de LGC y МОСТ', link: '/es/lk-lateral' }
+            ]
+          },
+          { text: 'Acerca de', link: '/es/about' }
+        ],
+        sidebar: [
+          {
+            text: 'Localización del juego',
+            items: [
+              { text: 'Instalador en línea', link: '/es/lk-next' },
+              { text: 'Paquetes sin conexión', link: '/es/offline-installer' }
+            ]
+          },
+          {
+            text: 'Localización de LGC y МОСТ',
+            items: [
+              { text: 'LK Lateral', link: '/es/lk-lateral' }
+            ]
+          }
+        ],
+        footer: {
+          message: 'El equipo y el proyecto no están afiliados con Леста Игры. Todos los recursos del juego son propiedad de sus respectivos dueños.',
+          copyright: `© 2023–${new Date().getFullYear()} LocalizedKorabli. Todos los derechos reservados.`
+        },
+        logoLink: '/es/'
+      }
+    },
     cht: {
       label: '繁體中文',
       title: '澪刻LocalizedKorabli',

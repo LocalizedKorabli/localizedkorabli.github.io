@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 
-type Locale = 'chs' | 'cht' | 'en' | 'ja' | 'ru'
+type Locale = 'chs' | 'cht' | 'de' | 'en' | 'es' | 'ja' | 'ru'
 
 const props = defineProps<{
   locale: Locale
@@ -13,7 +13,9 @@ const RELEASES_URL = 'https://github.com/LocalizedKorabli/LK-Lateral/releases/la
 const labels: Record<Locale, string> = {
   chs: '下载',
   cht: '下載',
+  de: 'Herunterladen',
   en: 'Download',
+  es: 'Descargar',
   ja: 'ダウンロード',
   ru: 'Скачать',
 }

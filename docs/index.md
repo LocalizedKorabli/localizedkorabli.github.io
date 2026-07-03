@@ -16,6 +16,12 @@ if (typeof window !== 'undefined') {
   else if (preferredLangs.includes('ja')) {
     window.location.href = '/jp/';
   }
+  else if (preferredLangs.includes('de')) {
+    window.location.href = '/de/';
+  }
+  else if (preferredLangs.includes('es')) {
+    window.location.href = '/es/';
+  }
   else if (preferredLangs.includes('zh')) {
     window.location.href = '/chs/';
   } 
@@ -29,4 +35,5 @@ if (typeof window !== 'undefined') {
   <p style="color: var(--vp-c-text-1); font-size: 1.2rem;">Redirecting to your preferred language...</p>
   <p style="color: var(--vp-c-text-2); font-size: 1.2rem;">Перенаправляем на вашу языковую версию...</p>
   <p style="color: var(--vp-c-text-1); font-size: 1.2rem;">正在跳转至您的语言版本 · 言語設定を確認中...</p>
+  <p style="color: var(--vp-c-text-2); font-size: 1.2rem;">Weiterleitung zu Ihrer bevorzugten Sprache... · Redirigiendo a su idioma preferido...</p>
 </div>
