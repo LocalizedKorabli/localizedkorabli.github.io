@@ -119,8 +119,8 @@ export default defineConfig({
           {
             text: 'Spielclient-Lokalisierung',
             items: [
-              { text: 'Online-Installationsprogramm', link: '/de/lk-next' },
-              { text: 'Offline-Installationspakete', link: '/de/offline-installer' }
+              { text: 'Online-Installer', link: '/de/lk-next' },
+              { text: 'Offline-Pakete', link: '/de/offline-installer' }
             ]
           },
           {
