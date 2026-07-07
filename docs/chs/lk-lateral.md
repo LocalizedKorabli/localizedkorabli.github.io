@@ -45,7 +45,7 @@ layout: page
   <p class="custom-block-title">全面支持</p>
   <ul>
     <li><strong>多系统</strong>: 支持 Windows 10 / 11 (64 位)</li>
-    <li><strong>多语言</strong>: 支持以简体中文、繁体中文、英语、日语显示，并为（不仅限于）以上语言分别安装本地化包</li>
+    <li><strong>多语言</strong>: 支持以简体中文、繁体中文、英文、日文、德文、西班牙文显示，并为（不仅限于）以上语言分别安装本地化包</li>
   </ul>
 </div>
 </div>

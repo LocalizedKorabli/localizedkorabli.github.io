@@ -22,5 +22,5 @@ features:
   - title: Timely Delivery
     details: We strictly follow Live/PT server update schedules. Get your localization packs immediately upon version release with zero lag.
   - title: Multi-language Support
-    details: Currently covering English, Simplified Chinese, Traditional Chinese, and Japanese. Bridging the gap for players across all regions.
+    details: Currently covering English, Simplified Chinese, Traditional Chinese, Japanese, German, and Spanish. Bridging the gap for players across all regions.
 ---

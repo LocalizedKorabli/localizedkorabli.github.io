@@ -50,7 +50,7 @@ layout: page
   <ul>
     <li><strong>多系統</strong>: 支援 Windows 7 / 8 / 10 / 11 (64 位元)</li>
     <li><strong>多線路</strong>: 支援騰訊雲、Cloudflare、Gitee、GitLab 等多條線路，保證全球玩家下載體驗</li>
-    <li><strong>多語言</strong>: 支援以繁體中文、簡體中文、英文、日文顯示，並為以上語言分別安裝在地化包</li>
+    <li><strong>多語言</strong>: 支援以繁體中文、簡體中文、英文、日文、德文、西班牙文顯示，並為以上語言分別安裝在地化包</li>
   </ul>
 </div>
 

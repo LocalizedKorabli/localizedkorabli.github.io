@@ -50,7 +50,7 @@ layout: page
   <ul>
     <li><strong>多系统</strong>: 支持 Windows 7 / 8 / 10 / 11 (64 位)</li>
     <li><strong>多线路</strong>: 支持腾讯云、Cloudflare、Gitee、GitLab 等多条线路，保证全球玩家下载体验</li>
-    <li><strong>多语言</strong>: 支持以简体中文、繁体中文、英语、日语显示，并为以上语言分别安装本地化包</li>
+    <li><strong>多语言</strong>: 支持以简体中文、繁体中文、英文、日文、德文、西班牙文显示，并为以上语言分别安装本地化包</li>
   </ul>
 </div>
 </div>

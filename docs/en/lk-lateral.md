@@ -45,7 +45,7 @@ layout: page
   <p class="custom-block-title">Full Support</p>
   <ul>
     <li><strong>Multi-OS</strong>: Supports Windows 10 / 11 (64-bit)</li>
-    <li><strong>Multi-language</strong>: Supports interface display in English, Simplified Chinese, Traditional Chinese, and Japanese, with localization packs for these (and other) languages</li>
+    <li><strong>Multi-language</strong>: Supports interface display in English, Simplified Chinese, Traditional Chinese, Japanese, German, and Spanish, with localization packs for these (and other) languages</li>
   </ul>
 </div>
 </div>

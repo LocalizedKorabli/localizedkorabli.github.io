@@ -50,7 +50,7 @@ layout: page
   <ul>
     <li><strong>Multi-OS</strong>: Supports Windows 7 / 8 / 10 / 11 (64-bit)</li>
     <li><strong>Multi-route</strong>: Supports Tencent Cloud, Cloudflare, Gitee, GitLab and other routes to ensure download experience for global players</li>
-    <li><strong>Multi-language</strong>: Supports interface display in English, Simplified Chinese, Traditional Chinese, and Japanese, with localization packs for each</li>
+    <li><strong>Multi-language</strong>: Supports interface display in English, Simplified Chinese, Traditional Chinese, Japanese, German, and Spanish, with localization packs for each</li>
   </ul>
 </div>
 </div>
