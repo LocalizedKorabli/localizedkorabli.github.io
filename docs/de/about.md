@@ -100,6 +100,12 @@ layout: home
           <span class="link-desc">Ein Team, das mehrsprachige Lokalisierungen (EN, PL, DE, ES, KO usw.) für Мир танков bereitstellt</span>
         </div>
       </a>
+      <a href="https://mktool.info/" target="_blank" class="link-card">
+        <div class="link-content">
+          <span class="link-name">MKtool</span>
+          <span class="link-desc">Eine Website mit Datenanalysen für Мир кораблей-Schiffe</span>
+        </div>
+      </a>
     </div>
   </section>
 

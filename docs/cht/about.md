@@ -100,6 +100,12 @@ layout: home
           <span class="link-desc">為 Мир танков 提供英、波、德、西、韓等多語言在地化的團隊</span>
         </div>
       </a>
+      <a href="https://mktool.info/" target="_blank" class="link-card">
+        <div class="link-content">
+          <span class="link-name">MKtool</span>
+          <span class="link-desc">為 Мир кораблей 艦艇提供數據分析的網站</span>
+        </div>
+      </a>
     </div>
   </section>
 

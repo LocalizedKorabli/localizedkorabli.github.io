@@ -102,6 +102,12 @@ layout: home
         <span class="link-desc">Мир танков の多言語（英語、波蘭語、独語、西語、韓国語等）ローカライズを提供</span>
       </div>
     </a>
+    <a href="https://mktool.info/" target="_blank" class="link-card">
+      <div class="link-content">
+        <span class="link-name">MKtool</span>
+        <span class="link-desc">Мир кораблей の艦艇データ分析サイト</span>
+      </div>
+    </a>
   </div>
 </section>
 
